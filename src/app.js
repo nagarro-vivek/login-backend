@@ -14,7 +14,7 @@ app.use('/api/user', userRoutes);
 
 
 app.get('/', (req, res) => {
-    res.send("hello");
+    res.send("Server is Running");
 });
 
 app.use((err, req, res, next) => {
