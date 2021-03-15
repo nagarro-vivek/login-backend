@@ -21,6 +21,4 @@ app.use((err, req, res, next) => {
     handleError(err,res);
 });
 
-app.listen(3001, () => {
-    console.log('Server is running on port 3001');
-});
+app.listen(process.env.PORT || 8081);
